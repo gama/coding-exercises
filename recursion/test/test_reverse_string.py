@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from main import reverse
+from recursion.reverse_string import reverse
 
 
 def test_single_char():
