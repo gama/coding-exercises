@@ -1,7 +1,7 @@
 var reverse = require('../reverse_string').reverse;
 var assert  = require('assert');
 
-describe('Reverse String', function () {
+describe('Recursive reverse string', function () {
     it('should reverse a string with a single char', function () {
         assert.equal(reverse('a'), 'a');
     });

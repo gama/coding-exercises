@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "description": "Coding Exercises in Javascript",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
   "devDependencies": {
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test":  "mocha --exclude '**/node_modules/**' '**/test_*.js'",
-    "mocha": "mocha"
+    "test": "mocha --exclude '**/node_modules/**' '**/test_*.js'",
+    "mocha": "mocha --exclude '**/node_modules/**' --recursive"
   },
   "repository": {
     "type": "git",
