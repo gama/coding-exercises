@@ -1,6 +1,10 @@
+node_modules/
+btree-in-array/**/*.js
+btree-in-array/**/*.js.map
+btree-in-array/**/*.d.ts
+
 .venv/
 venv/
 __pycache__/
-node_modules/
 *.egg-info/
 *.pyc

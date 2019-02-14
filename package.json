@@ -4,14 +4,20 @@
   "description": "Coding Exercises in Javascript",
   "main": "index.js",
   "dependencies": {
+    "@types/mocha": "^5.2.6",
+  "@types/node": "^11.9.4",
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha --exclude '**/node_modules/**' '**/test_*.js'",
-    "mocha": "mocha --exclude '**/node_modules/**' --recursive"
+    "build":       "tsc --build",
+    "build:watch": "tsc --watch",
+    "clean":       "tsc --build --clean",
+    "pretest":     "npm run build",
+    "test":        "mocha --exclude '**/node_modules/**' '**/test_*.js'",
+    "mocha":       "mocha --exclude '**/node_modules/**' --recursive"
   },
   "repository": {
     "type": "git",
